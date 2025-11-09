@@ -1,4 +1,4 @@
-# 🤖 Unique Paths II - Complete Solution Guide
+#  Unique Paths II - Complete Solution Guide
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-Problem%2063-orange?style=flat&logo=leetcode)](https://leetcode.com/problems/unique-paths-ii/)
 [![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)](https://leetcode.com/problems/unique-paths-ii/)
@@ -6,7 +6,7 @@
 
 A comprehensive guide to solving the **Unique Paths II** problem with visual explanations, step-by-step breakdown, and an interactive visualization tool.
 
-## 📋 Table of Contents
+##  Table of Contents
 - [Problem Statement](#problem-statement)
 - [Intuition](#intuition)
 - [Approach](#approach)
@@ -19,7 +19,7 @@ A comprehensive guide to solving the **Unique Paths II** problem with visual exp
 
 ---
 
-## 📝 Problem Statement
+##  Problem Statement
 
 You are given an `m x n` integer array `grid`. There is a robot initially located at the **top-left corner** (i.e., `grid[0][0]`). The robot tries to move to the **bottom-right corner** (i.e., `grid[m - 1][n - 1]`).
 
@@ -52,7 +52,7 @@ There is only 1 way to reach the bottom-right corner.
 
 ---
 
-## 💡 Intuition
+##  Intuition
 
 This is a **Dynamic Programming** problem that builds upon the classic "Unique Paths" problem, with the added complexity of obstacles.
 
@@ -78,7 +78,7 @@ We can build the solution **bottom-up** by solving smaller subproblems:
 
 ---
 
-## 🎯 Approach
+##  Approach
 
 ### Step-by-Step Algorithm:
 
@@ -97,7 +97,7 @@ Create a 2D array `dp[m][n]` where `dp[i][j]` represents the number of unique pa
 dp[0][0] = 1;  // One way to be at the start
 ```
 
-#### 4. **Initialize First Column** ⚠️ **CRITICAL**
+#### 4. **Initialize First Column**  **CRITICAL**
 ```java
 for (int i = 1; i < m; i++) {
     dp[i][0] = (obstacleGrid[i][0] == 0 && dp[i-1][0] == 1) ? 1 : 0;
@@ -119,7 +119,7 @@ Grid First Column:    DP Values:
 [0]              →    [0] ✗ unreachable (chain broken)
 ```
 
-#### 5. **Initialize First Row** ⚠️ **CRITICAL**
+#### 5. **Initialize First Row**  **CRITICAL**
 ```java
 for (int j = 1; j < n; j++) {
     dp[0][j] = (obstacleGrid[0][j] == 0 && dp[0][j-1] == 1) ? 1 : 0;
@@ -169,7 +169,7 @@ return dp[m-1][n-1];  // Answer is in the bottom-right corner
 
 ---
 
-## 💻 Solution
+##  Solution
 
 ```java
 class Solution {
@@ -221,7 +221,7 @@ class Solution {
 
 ---
 
-## ⏱️ Complexity Analysis
+##  Complexity Analysis
 
 ### Time Complexity: **O(m × n)**
 - We visit each cell in the grid exactly once
@@ -241,7 +241,7 @@ int[] dp = new int[n];
 
 ---
 
-## 🎨 Visual Explanation
+##  Visual Explanation
 
 ### Example: 3×3 Grid with Obstacle
 
@@ -336,7 +336,7 @@ Path 2: Down → Down → Right → Right
 
 ---
 
-## 🖥️ Interactive Visualization
+##  Interactive Visualization
 
 This repository includes an **interactive HTML visualization** that lets you see the algorithm in action!
 
@@ -358,7 +358,7 @@ This repository includes an **interactive HTML visualization** that lets you see
 
 ---
 
-## 🔑 Key Insights
+##  Key Insights
 
 ### 1. **Why Special First Row/Column Initialization?**
 In the original "Unique Paths" problem (no obstacles), every cell in the first row and column has exactly 1 path. But with obstacles:
@@ -394,9 +394,9 @@ To find paths to (1,2), we need:
 
 ---
 
-## ⚠️ Common Mistakes
+##  Common Mistakes
 
-### ❌ Mistake 1: Forgetting to Check Start/End
+###  Mistake 1: Forgetting to Check Start/End
 ```java
 // WRONG: Not checking if start or end is blocked
 public int uniquePathsWithObstacles(int[][] grid) {
@@ -414,7 +414,7 @@ if (obstacleGrid[0][0] == 1 || obstacleGrid[m-1][n-1] == 1) {
 }
 ```
 
-### ❌ Mistake 2: Wrong First Row/Column Initialization
+###  Mistake 2: Wrong First Row/Column Initialization
 ```java
 // WRONG: Blindly setting all to 1
 for (int i = 0; i < m; i++) {
@@ -429,7 +429,7 @@ for (int i = 1; i < m; i++) {
 }
 ```
 
-### ❌ Mistake 3: Forgetting to Handle Obstacles in Main Loop
+###  Mistake 3: Forgetting to Handle Obstacles in Main Loop
 ```java
 // WRONG: Not checking for obstacles
 for (int i = 1; i < m; i++) {
@@ -450,7 +450,7 @@ if (obstacleGrid[i][j] == 1) {
 
 ---
 
-## 📚 Related Problems
+##  Related Problems
 
 - [LeetCode 62: Unique Paths](https://leetcode.com/problems/unique-paths/) (Easier - no obstacles)
 - [LeetCode 64: Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
