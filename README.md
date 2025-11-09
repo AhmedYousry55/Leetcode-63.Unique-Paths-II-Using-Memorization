@@ -30,7 +30,7 @@ You are given an `m x n` integer array `grid`. There is a robot initially locate
 
 **Goal:** Return the number of possible unique paths that the robot can take to reach the bottom-right corner.
 
-### Example 1:
+### Example 1 :
 ```
 Input: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
 Output: 2
