@@ -4,7 +4,7 @@ Understanding the differences between the two problems will help you master Uniq
 
 ---
 
-## 📊 Side-by-Side Comparison
+##  Side-by-Side Comparison
 
 | Aspect | Unique Paths I | Unique Paths II |
 |--------|----------------|-----------------|
@@ -17,7 +17,7 @@ Understanding the differences between the two problems will help you master Uniq
 
 ---
 
-## 🔍 Code Comparison
+##  Code Comparison
 
 ### Unique Paths I (Original)
 ```java
@@ -90,7 +90,7 @@ class Solution {
 
 ---
 
-## 🎯 Key Differences Explained
+##  Key Differences Explained
 
 ### 1. Input Type
 
@@ -195,7 +195,7 @@ if (obstacleGrid[i][j] == 1) {
 
 ---
 
-## 📈 Example: Same Grid, Different Problems
+##  Example: Same Grid, Different Problems
 
 ### Setup
 ```
@@ -225,7 +225,7 @@ Grid:                 DP Table:         Answer:
 
 ---
 
-## 🎓 What You Need to Learn for Unique Paths II
+##  What You Need to Learn for Unique Paths II
 
 If you already know Unique Paths I, you need to understand:
 
@@ -263,7 +263,7 @@ if (start blocked OR end blocked) {
 
 ---
 
-## 🚀 Progression Strategy
+##  Progression Strategy
 
 ### If you're learning from scratch:
 1. ✅ Master Unique Paths I first
@@ -279,7 +279,7 @@ if (start blocked OR end blocked) {
 
 ---
 
-## 💡 Mental Model Shift
+##  Mental Model Shift
 
 ### Unique Paths I Thinking:
 ```
@@ -296,7 +296,7 @@ if (start blocked OR end blocked) {
 
 ---
 
-## 🎯 Practice Progression
+##  Practice Progression
 
 Try solving these in order:
 
@@ -319,7 +319,7 @@ Try solving these in order:
 
 ---
 
-## 📝 Conversion Checklist
+##  Conversion Checklist
 
 Converting Unique Paths I solution to Unique Paths II? Check these:
 
@@ -335,7 +335,7 @@ Converting Unique Paths I solution to Unique Paths II? Check these:
 
 ---
 
-## 🎉 Summary
+##  Summary
 
 | You Need To | Unique Paths I | Unique Paths II |
 |-------------|----------------|-----------------|
